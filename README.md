@@ -2,10 +2,8 @@
 
 ### Инструкция
 - Каждое задание должно быть выполненно в отдельном `.cpp` файле.
-- Прототипы функции должны быть вынесены в `lab05.hpp` файл.
+- Прототипы функции должны быть вынесены в `lab04.hpp` файл.
 - Все `.cpp` файлы добавить в `CMakeLists.txt`
-
-Подробнее о составлении `CMakeLists.txt` (для интересующихся) можно почитать [тут](https://habr.com/post/155467/).
 
 ### Задание
 1. Необходимо реализовать функцию, которая определяет арифметическое среднее в массиве.
@@ -22,7 +20,6 @@ float mean(const std::vector<float>&);
 std::pair<float, float> minMax(const std::vector<float>&);
 ```
 Если массив пуст, функция должна вернуть `min` и `max` из `std::numeric_limits`.
-Об этом можно почитать [тут](https://en.cppreference.com/w/cpp/types/numeric_limits).
 
 3. Необходимо реализовать функцию `argmax`, которая определяет индекс максимума в массиве. 
 Прототип функции необходимо выбрать самостоятельно.
@@ -45,7 +42,7 @@ bool remove_first_negative_element(const std::vector<int>& vec, int& removed_ele
 Значение удаленного элемента помещать в `removed_element`, если удаление не произошло то инициализировать `removed_element` нулем.
 
 6. Необходимо реализовать функцию, которая заменяет в строке все вхождения подстроки на новую строку.
-Можно пользоваться функцией `std::string::find`, о которой можно почитать [тут](https://ru.cppreference.com/w/cpp/string/basic_string/find).
+Можно пользоваться функцией `std::string::find`.
 ```cpp
 std::string replace(const std::string& str, const std::string& old, const std::string& new_string);
 ```
