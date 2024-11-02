@@ -5,7 +5,7 @@
 void sort(std::vector<float>& v) // merge sort algorithm
 {
 	constexpr float INF = std::numeric_limits<float>::max(); // if element is INF then it is non-existent
-	std::vector<std::vector<float>> oml(int(1 << int(std::ceil(std::log2(v.size())))), std::vector<float>(1, INF)), nml; // oml size is 2^(log2(size of v))
+	std::vector<std::vector<float>> oml(int(1 << int(std::ceil(std::log2(v.size())))), std::vector<float>(1, INF)), nml; // oml size is 2^(⌈log2(size of v)⌉)
 	for (int i = 0; i < v.size(); i++)
 	{
 		oml[i][0] = v[i];
